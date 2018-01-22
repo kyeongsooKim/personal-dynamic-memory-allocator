@@ -1,6 +1,10 @@
 # Personal Dynamic Memory Allocator
 ### Kyeongsoo Kim, September 2017 ~ October 2017
 
+# Usage
+> make
+
+> bin/sfmm_tests
 
 # Introduction
 The goal of this project is to understand The inner workings of a dynamic memory allocator, Memory padding and alignment, and linked lists data structure, memory hierarchy, and unit testing. I made my personal dynamic memory allocator. It's a segregated free list allocator for the x86-64 architecture
@@ -27,14 +31,9 @@ Plus, to check to functionality of this program, I made several criterion unit t
 over 4 pages is not allowed.
 - alignment and padding works correctly in the system I used when I did the project(64-bit Linux Mint).
 
-# Unit Test.
+# Unit Test
 
-For this assignment, we will use Criterion to test your allocator. We have
-provided a basic set of test cases and you will have to write your own as well.
-
-You will use the Criterion framework alongside the provided helper functions to
 To ensure my allocator works exactly, I made unit testing file using the C criterion framework in the `tests/sfmm_tests.c` file.
-## Compiling and Running Tests
 
 When you compile your program with `make`, a `sfmm_tests` executable will be
 created in the `bin` folder alongside the `main` executable. This can be run
